@@ -1,1 +1,0 @@
-export default{run:async(a,r,{groups:l})=>{if(l.alarm=l.alarm||[],0===l.alarm.length)return a.reply("No alarms in this group to reset.");l.alarm=[],await a.reply("✓ Successfully reset all alarms in this group.")},cmd:"resetalarm",type:"admin",group:!0,admin:!0,location:"plugins/group/resetalarm.js"};

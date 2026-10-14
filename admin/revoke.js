@@ -1,1 +1,0 @@
-export default{run:async(e,a,{})=>{try{var t=await a.groupRevokeInvite(e.chat);await e.reply("✓ Successfully reset the group link!\nNew link: https://chat.whatsapp.com/"+t)}catch(a){await e.reply("✗ Failed to reset group link: "+a.message)}},cmd:"revoke",type:"admin",group:!0,admin:!0,botAdmin:!0,location:"plugins/admin/revoke.js"};

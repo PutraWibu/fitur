@@ -1,1 +1,0 @@
-export default{run:async(a,e)=>{var d=""+(a.metadata?.desc||"");d?await a.reply(d):await a.reply("✗ This group does not have a description.")},cmd:"deskgc",alias:"descgc",type:"admin",group:!0,admin:!0,location:"plugins/admin/deskgc.js"};

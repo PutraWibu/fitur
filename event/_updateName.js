@@ -1,1 +1,0 @@
-export default{main:async(e,n,{users:a})=>{if(!a)return!1;const s=e.pushname||e.pushName||"";return s&&a.name!==s&&(a.name=s),!1},location:"plugins/event/_updateName.js"};
