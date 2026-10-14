@@ -1,0 +1,1 @@
+export default{run:async(e,o,{func:r})=>{var s=void 0!==process.env.SERVER_MEMORY&&"0"!==process.env.SERVER_MEMORY?process.env.SERVER_MEMORY+" MB":"∞";r=`✦ Memory Information\n\n- Ram Used Bot: ${r.fileSize(process.memoryUsage().rss)}\n- Max Ram Server: `+s,await e.reply(r)},cmd:"memory",alias:"ram",type:"info",location:"plugins/info/memory.js"};

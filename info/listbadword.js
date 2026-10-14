@@ -1,0 +1,1 @@
+export default{run:async(t,n,{cfg:i,setting:o})=>{if(0===o.toxic.length)return t.reply(i.mess.empty);i=`✦ LIST BAD WORD\n\nTotal : ${o.toxic.length}\n`,i+=o.toxic.map((t,n)=>n+1+". "+t).join("\n"),await t.reply(i)},cmd:"listbadword",type:"info",location:"plugins/info/listbadword.js"};

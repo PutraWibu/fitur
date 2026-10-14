@@ -1,0 +1,1 @@
+import{resetTotalChatForGroup as t}from"../../lib/totalchat.js";export default{run:async(a,e,{})=>{await t(a.chat),e.sendReact(a.chat,"✅",a.key),await a.reply("✓ Group chat data successfully reset.")},cmd:"resetlistpesan",alias:["resetlistchat","resettotalchat"],type:"admin",admin:!0,group:!0,location:"plugins/group/resetlistpesan.js"};

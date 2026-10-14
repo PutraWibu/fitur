@@ -1,0 +1,1 @@
+export default{run:async(e,t,{froms:a})=>{if(!a)return e.reply("✗ Please mention or reply to a message.");await t.sendMessage(e.chat,{text:"@"+a.replace(/[^0-9]/gi,""),mentions:[a]})},cmd:"tag",type:"group",group:!0,location:"plugins/group/tag.js"};

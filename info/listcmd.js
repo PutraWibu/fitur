@@ -1,0 +1,1 @@
+export default{run:async(t,e,{cfg:n})=>{var r=Object.entries(global.db.stickercmd||{});if(0===r.length)return t.reply(n.mess.empty);n="✦ LIST - STICKER - CMD ✦\n",n+=r.map(([,t],e)=>`\n${e+1}. ${t.text}\n- Creator: @`+t.creator.split("@")[0]).join("\n"),await t.reply(n)},cmd:"listcmd",type:"info",location:"plugins/info/listcmd.js"};

@@ -1,0 +1,1 @@
+export default{run:async(e,a,{})=>{if(!e.quoted||!e.quoted.fakeObj)return e.reply("✗ Reply a message with the caption "+e.cmd);var t=e.members.map(e=>e.id);await a.sendMessage(e.chat,{forward:e.quoted.fakeObj,mentions:t},{ephemeralExpiration:e.expiration})},cmd:"totag",use:"reply chat",type:"admin",group:!0,admin:!0,location:"plugins/admin/totag.js"};

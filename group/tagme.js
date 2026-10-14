@@ -1,0 +1,1 @@
+export default{run:async(a,e,{func:t})=>{await e.reply(a.chat,t.tag(a.sender),a,{expiration:a.expiration})},cmd:"tagme",type:"group",group:!0,desc:"Tags yourself.",location:"plugins/group/tagme.js"};

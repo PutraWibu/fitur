@@ -1,0 +1,1 @@
+export default{run:async(e,t,{cfg:l})=>{global.db.sticker=global.db.sticker||{};var s=Object.keys(global.db.sticker);if(0===s.length)return e.reply(l.mess.empty);let r="✦ LIST - DATABASE - STICKER\n";s.forEach((e,t)=>{r+=`\n${t+1}. `+e}),await e.reply(r)},cmd:"liststicker",alias:["liststiker","liststik"],type:"owner",owner:!0,location:"plugins/owner/liststicker.js"};

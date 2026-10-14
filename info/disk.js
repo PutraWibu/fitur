@@ -1,0 +1,1 @@
+import{exec as t}from"node:child_process";import{promisify as i}from"node:util";let e=i(t);export default{run:async(t,i)=>{let r;try{r=await e("cd && du -h --max-depth=1")}catch(t){r=t}finally{var{stdout:a,stderr:o}=r;a.trim()&&await t.reply("```"+a+"```"),o.trim()&&await t.reply("```"+o+"```")}},cmd:"disk",type:"info",desc:"get info disk server",location:"plugins/info/disk.js"};

@@ -1,0 +1,1 @@
+export default{main:async(e,t,{groups:i})=>{try{i.antihidetag&&!e.isOwner&&!e.isAdmin&&e.mentionedJid?.length>=e.members?.length&&await t.sendMessage(e.chat,{delete:{remoteJid:e.chat,fromMe:!1,id:e.key.id,participant:e.key.participant}})}catch(e){console.error("✗ Error in _antihidetag.js:",e)}},group:!0,botAdmin:!0,location:"plugins/event/_antihidetag.js"};

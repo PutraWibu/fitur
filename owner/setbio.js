@@ -1,0 +1,1 @@
+export default{run:async(e,t,{func:o})=>{if(!e.text)return e.reply(o.example(e.cmd,"Cukup donasi"));try{await t.updateProfileStatus(e.text),e.reply("✓ Bio bot berhasil diubah menjadi: "+e.text)}catch(t){console.error("✗ Error setting bot bio:",t),e.reply("✗ Gagal mengubah bio bot: "+t.message)}},cmd:"setbio",use:"text",type:"owner",owner:!0,location:"plugins/owner/setbio.js"};

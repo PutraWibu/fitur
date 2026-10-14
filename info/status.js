@@ -1,0 +1,1 @@
+export default{run:async(t,a)=>{let e;try{var i=await fetch("http://ip-api.com/line");e=await i.text()}catch(t){console.error("✗ Failed to fetch IP status:",t),e="✗ Failed to retrieve server status. Please try again later."}await t.reply(e)},cmd:"status",type:"info",location:"plugins/info/status.js"};
