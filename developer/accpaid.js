@@ -1,0 +1,1 @@
+module.exports={run:async(a,e)=>{const{status:d,isPaid:i}=global.db.autodonation;return d?i?a.reply("Pembayaran sudah di acc."):(global.db.autodonation.isPaid=!0,void e.sendReact(a.chat,"✅",a.key)):a.reply("Tidak ada sesi pembayaran.")},cmd:"accpaid",type:"developer",desc:"untuk menerima pembayaran via QRIS",location:"plugins/developer/accpaid.js"};
